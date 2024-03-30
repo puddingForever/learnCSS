@@ -1,8 +1,15 @@
 # Project1 : Social Editor
 
+**Header**
+
 - [Basic](#Basic)
 - [Animation](#Animation)
 - [FlexBox](#FlexBox)
+
+**App**
+
+- [FixHeight](#Fix)
+- [FlexBox2](#FlexBox2)
 
 # Basic
 
@@ -99,6 +106,12 @@ hover effect should be done seperately
 }
 ```
 
+7. Recent design color trend is to mix blue color
+
+![image](https://github.com/puddingForever/learnCSS/assets/126591306/a897067f-f3d9-4ec4-a039-9de820f621da)
+
+mix blueish color to its original color for the cool effect
+
 # Animation
 
 Use @keyframes
@@ -139,3 +152,70 @@ logo will appear from upwards to original position in 0.5 seconds
 # FlexBox
 
 <a href="https://github.com/ByteGrad/Professional-CSS-Course/blob/master/slides.md">course slides from bytegrad</a>
+
+# Fix
+
+![image](https://github.com/puddingForever/learnCSS/assets/126591306/117768cd-01df-4958-9917-715a26fde986)
+
+We already set the 100vh in our DOM, and since header takes the space (55px), simply substract 55px from 100vh
+
+```
+.app__container{
+    height: calc(100vh -  55px);
+    display: flex;
+}
+```
+
+# FlexBox2
+
+We can distribute the block size automatically <br>
+First, make parent element becomes flex container
+
+```
+.app__container{
+    height: calc(100vh -  55px);
+    display: flex;
+}
+```
+
+After that, assign sizes to each blocks
+
+```
+.sidebar{
+    background-color : #10171a;
+    flex : 1;
+}
+
+.panel{
+    background-color : #2B363C;
+    flex : 3;
+}
+
+.main{
+    background-color: #edf1f3;
+    flex : 12;
+}
+```
+
+The size of the each elements will get smaller as the screen of devices gets smaller <br>
+If we dont want that, we can just simply assign specific px
+
+```
+.sidebar{
+    background-color : #10171a;
+    width : 75px;
+}
+
+.panel{
+    background-color : #2B363C;
+    flex : 350px;
+}
+
+.main{
+    background-color: #edf1f3;
+    flex : 1;
+}
+```
+
+the size of the sidebar and panel will remain same, cuz we assigned specific px size into it <br>
+![image](https://github.com/puddingForever/learnCSS/assets/126591306/0cf0fb1f-eb56-4cd3-ae9f-f643d109e033)

@@ -34,6 +34,11 @@ button{
     width : 100vw;
 }
 
+.app__container{
+    height: calc(100vh -  55px);
+    display: flex;
+}
+
 /* STYLES */
 .header {
     background-image: linear-gradient(to right,#18A0BE, #622DB9);
@@ -92,4 +97,26 @@ button{
 
 .dd-toggle__text{
 
+}
+
+/*------------------*/
+
+.sidebar{
+    background-color : #10171a;
+    width : 75px;
+}
+
+
+/*------------------*/
+
+.panel{
+    background-color : #2B363C;
+    flex : 350px;
+}
+
+
+/*------------------*/
+.main{
+    background-color: #edf1f3;
+    flex : 1;
 }
