@@ -1,6 +1,10 @@
+This repo is for learning purpose only
+
 # Simple Editor
 
-## FlexBox
+- [Course 1](#Course1)
+
+# Course1
 
 ## Some Tips
 
@@ -25,7 +29,7 @@ https://cdnjs.com/libraries/font-awesome
 
 3. When the app takes all the screen(fixed), use 100vh, 100vw
 
-'v' indicates viewport which takes all the screen, there will be no scrolls
+'v' indicates viewport which takes all the screen, there will be no scrolls <br>
 vh => viewport height, vw => viewport width
 
 ```
