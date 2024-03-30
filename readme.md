@@ -1,7 +1,7 @@
 # Project1 : Social Editor
 
 - [Basic](#Basic)
-- [Animation] (#Animation)
+- [Animation](#Animation)
 - [FlexBox](#FlexBox)
 
 # Basic
