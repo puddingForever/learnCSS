@@ -6,10 +6,14 @@
 - [Animation](#Animation)
 - [FlexBox](#FlexBox)
 
-**App**
+**App Container**
 
 - [FixHeight](#Fix)
 - [FlexBox2](#FlexBox2)
+
+**Side Bar**
+
+- [FlexBox3](#FlexBox3)
 
 # Basic
 
@@ -81,7 +85,7 @@ button{
 
 6. transparent & hover effect
    rgba => combine red,green,blue to some color
-   when the number is close to 1 , it is close to opacity.
+   when the number is close to 1 , it is close to opacity .
    but if the number is close to 0, it is close to transparent;
 
 ```
@@ -219,3 +223,51 @@ If we dont want that, we can just simply assign specific px
 
 the size of the sidebar and panel will remain same, cuz we assigned specific px size into it <br>
 ![image](https://github.com/puddingForever/learnCSS/assets/126591306/0cf0fb1f-eb56-4cd3-ae9f-f643d109e033)
+
+# FlexBox3
+
+![image](https://github.com/puddingForever/learnCSS/assets/126591306/d1255d17-b55f-4e14-be0a-94313dd07f41)
+
+we have to style the icon and text in the middle.
+
+```
+<div class="sidebar">
+            <section class="menu">
+                <button class="menu__button">
+                    <i class="fas fa-layer-group menu__icon"></i>
+                    <span class="menu__text">Templates</span>
+                </button>
+                <button class="menu__button">
+                    <i class="fas fa-image menu__icon"></i>
+                    <span class="menu__text">Images</span>
+                </button>
+                <button class="menu__button">
+                    <i class="fas fa-font menu__icon"></i>
+                    <span class="menu__text">Text/Font</span>
+                </button>
+                <button class="menu__button">
+                    <i class="fas fa-shapes menu__icon"></i>
+                    <span class="menu__text">Shapes</span>
+                </button>
+            </section>
+```
+
+We wrap the button as flexbox. and then align-items center <br>
+**(!!)** However align-items center will align items horizontally, but we need to align vertically. <br>
+Therefore, use flex-direction as column **(!!!)**
+
+```
+.menu__button{
+    padding : 19px 0;
+    color : rgba(255,255,255,0.4);
+    display: flex;
+    flex-direction : column;
+    align-items:center;
+    width:100%;
+
+}
+
+```
+
+This is without flex-direction : column <br>
+![image](https://github.com/puddingForever/learnCSS/assets/126591306/6933e0ae-7caf-49f6-9847-7115885e0cba)
