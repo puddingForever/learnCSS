@@ -6,14 +6,16 @@
 - [Animation](#Animation)
 - [FlexBox](#FlexBox)
 
-**App Container**
+**Layout**
 
 - [FixHeight](#Fix)
 - [FlexBox2](#FlexBox2)
 
-**Side Bar**
+**SideBar**
 
 - [FlexBox3](#FlexBox3)
+- [Position](#position)
+- [FlexBox4](#flexbox4)
 
 # Basic
 
@@ -271,3 +273,76 @@ Therefore, use flex-direction as column **(!!!)**
 
 This is without flex-direction : column <br>
 ![image](https://github.com/puddingForever/learnCSS/assets/126591306/6933e0ae-7caf-49f6-9847-7115885e0cba)
+
+# position
+
+Appearing bluebar happens when clicked, so we seperated another style element for the button element <br>
+and then , it is positioned absolute when it's clicked , but since new style is inside of original element, we spare position relative to its original element <br>
+
+```
+.menu__button--active{
+    background-color: #2B363B;
+    color:#fff;
+
+    position:relative;
+}
+
+
+.menu__button--active::before{
+    content : '';
+    width:3px;
+    height:100%;
+    background-color: #375bb6;
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+```
+
+# flexbox4
+
+To display &copyright logo in the bottom of the sidebar, we use flexbox <br>
+
+make the parent container be flex container also elements are displayed in vertical way so flex-direction is column<br>
+
+```
+.sidebar{
+    background-color : #10171a;
+    width : 75px;
+    display:flex;
+    flex-direction: column;
+}
+
+```
+
+footer has the child element which has a copyright <br>
+margin-top auto means that margin top will take the top of the elements. <br>
+therefore this element will go bottom <br>
+
+```
+.footer{
+    /*margin will take the top . footer will go bottom*/
+    margin-top:auto;
+
+    margin-bottom:60px;
+    transform:rotate(-90deg);
+}
+
+```
+
+since we used flexbox, the copyright element is wrapped like below <br>
+![image](https://github.com/puddingForever/learnCSS/assets/126591306/00e8e3ea-9f41-4845-82d2-967deb18b4f7)
+
+use white-space nowrap to avoid it.
+
+```
+.copyright{
+    color:rgba(255,255,255,0.15);
+    font-size:12px;
+
+    white-space : nowrap;
+}
+```
+
+![image](https://github.com/puddingForever/learnCSS/assets/126591306/7f3719cb-bdd2-4642-92b2-fe0149465a94)
