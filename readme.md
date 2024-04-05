@@ -1,5 +1,7 @@
 # Project1 : Social Editor
 
+![image](https://github.com/puddingForever/learnCSS/assets/126591306/347d3164-4ce3-4da4-9b36-fe0cc4862214)
+
 **Header**
 
 - [Basic](#Basic)
