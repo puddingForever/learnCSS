@@ -16,6 +16,7 @@
 - [FlexBox3](#FlexBox3)
 - [Position](#position)
 - [FlexBox4](#flexbox4)
+- [@media](#media)
 
 # Basic
 
@@ -346,3 +347,18 @@ use white-space nowrap to avoid it.
 ```
 
 ![image](https://github.com/puddingForever/learnCSS/assets/126591306/7f3719cb-bdd2-4642-92b2-fe0149465a94)
+
+# media
+
+@media makes the project responsive for mobile
+
+```
+/* MEDIA QUERIES*/
+@media (max-width:1200px){
+    .panel{
+        display:none;
+    }
+}
+```
+
+if the panel is less than 1200px, panel disappears
