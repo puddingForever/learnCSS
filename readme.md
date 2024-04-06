@@ -420,10 +420,10 @@ grid-template-rows:  grid-template-rows: 65px 724px 1fr;
 
 Now, we assign the space for each elements using grid. <br>
 if we click grid on the html below <br>
-![image](https://github.com/puddingForever/learnCSS/assets/126591306/f4565366-9fb7-460d-9b11-41288a3a3ec8)
+![image](https://github.com/puddingForever/learnCSS/assets/126591306/b055d7b0-29e1-4bf8-a502-7c1effa22c2d)
 <br>
 we will see the grid box <br>
-![image](https://github.com/puddingForever/learnCSS/assets/126591306/f4565366-9fb7-460d-9b11-41288a3a3ec8)
+
 <br>
 
 header will take column grid 1 to 3 and row to 1 to 2
