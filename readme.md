@@ -20,6 +20,11 @@
 - [FlexBox4](#flexbox4)
 - [@media](#media)
 
+# Project 2
+
+- [basic](#basicP2)
+- [grid](#grid)
+
 # Basic
 
 ![image](https://github.com/puddingForever/learnCSS/assets/126591306/0b2d5868-e949-44b8-80c6-d095251ada96)
@@ -364,3 +369,69 @@ use white-space nowrap to avoid it.
 ```
 
 if the panel is less than 1200px, panel disappears
+
+# basicP2
+
+1. google fonts
+
+https://fonts.google.com/
+
+```
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+```
+
+2. box-sizing
+
+```
+*,
+*::before,
+*::after{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+```
+
+if we add box-sizing : border-box, we are adding the border to the contents,<br>
+when we calculate the width of the contents , it counts border too <br>
+if we don't add box-sizing : border-box, width gets larger cuz it does not calculate the border <br>
+if we add box-sizing , we should add pseudo selector too(before, after) <br>
+
+# grid
+
+diplay element as grid and then use grid-template-columns to specify the column width <br>
+rest can assign fr keywords <br>
+
+```
+display:grid;
+grid-template-columns: 355px 1fr;
+```
+
+![image](https://github.com/puddingForever/learnCSS/assets/126591306/305a7933-47c2-4880-acfd-793a34c62404)
+
+```
+display : grid;
+grid-template-rows:  grid-template-rows: 65px 724px 1fr;
+
+```
+
+![image](https://github.com/puddingForever/learnCSS/assets/126591306/66e9e543-c471-44c5-848f-01a4b3b07a11)
+
+Now, we assign the space for each elements using grid. <br>
+if we click grid on the html below <br>
+![image](https://github.com/puddingForever/learnCSS/assets/126591306/f4565366-9fb7-460d-9b11-41288a3a3ec8)
+<br>
+we will see the grid box <br>
+![image](https://github.com/puddingForever/learnCSS/assets/126591306/f4565366-9fb7-460d-9b11-41288a3a3ec8)
+<br>
+
+header will take column grid 1 to 3 and row to 1 to 2
+
+```
+grid-column : 1/3;
+grid-row : 1/2;
+```
+
+grid slides <br>
+https://github.com/ByteGrad/Professional-CSS-Course/blob/master/slides.md
