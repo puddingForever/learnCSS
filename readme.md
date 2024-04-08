@@ -24,6 +24,8 @@
 
 - [basic](#basicP2)
 - [grid](#grid)
+- [placeholder](#placeholder)
+- [sass](#sass)
 
 # Basic
 
@@ -435,3 +437,53 @@ grid-row : 1/2;
 
 grid slides <br>
 https://github.com/ByteGrad/Professional-CSS-Course/blob/master/slides.md
+
+# placeholder
+
+we can style placeholder using pseudo style
+
+```
+.search__input::placeholder {
+  color: #a9b4b7;
+}
+```
+
+# sass
+
+create scss file and write normal css codes <br>
+here, we can do nested style and use variables for consistency <br>
+$ creates variables , & indicates parent style <br>
+
+```
+// VARIABLES
+$color-grey-light: #eef3f4;
+$color-grey-medium: #a9b4b7;
+$color-grey-dark: #555a5b;
+
+//nested styles
+.search {
+  position: relative;
+
+  &__input {
+    background-color: $color-grey-light;
+    height: 34px;
+    width: 405px;
+    border-radius: 500px;
+    font-size: 13px;
+    color: $color-grey-dark;
+    padding-left: 20px;
+    outline: none;
+    transition: $ts;
+  }
+}
+
+```
+
+To use sass, we have to compile it using 'npm run compile' <br>
+we can simply write script inside of package.json where all metadata are in <br>
+
+```
+"scripts": {
+    "compile": "sass --watch --no-source-map project2/main.scss project2/style.css"
+  },
+```

@@ -1,0 +1,14 @@
+{
+  "name": "learncss",
+  "version": "1.0.0",
+  "description": "![image](https://github.com/puddingForever/learnCSS/assets/126591306/347d3164-4ce3-4da4-9b36-fe0cc4862214)",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch --no-source-map project2/main.scss project2/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.74.1"
+  }
+}
