@@ -145,17 +145,68 @@ a {
   }
 }
 
+//-----------------------
+
 .sidebar {
   background-color: #11271f;
   grid-column: 1/2;
   grid-row: 2/4;
 }
 
+.intro {
+  padding: 48px 35px 45px;
+  border-bottom: 1px solid rgba(#fff, 0.1);
+  &__text {
+    color: $color-grey-light;
+    font-size: 16px;
+    margin-top: 12px;
+    line-height: 1.8;
+  }
+}
+
+.first-heading {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 34px;
+  line-height: 1;
+}
+
+.social {
+  &__img {
+  }
+
+  &__container {
+  }
+
+  &__number {
+  }
+
+  &__text {
+  }
+}
+
+.auth {
+  &__text {
+  }
+
+  &__text {
+  }
+}
+
+.btn {
+  &__icon {
+  }
+}
+
+//-------------------------
+
 .gallery {
   background-color: #eef3f4;
   grid-column: 2/3;
   grid-row: 2/3;
 }
+
+//-------------------------
 
 .steps {
   background-color: #e7edee;

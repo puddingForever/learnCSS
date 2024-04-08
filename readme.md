@@ -26,6 +26,7 @@
 - [grid](#grid)
 - [placeholder](#placeholder)
 - [sass](#sass)
+- [lineHeight](#lineheight)
 
 # Basic
 
@@ -487,3 +488,5 @@ we can simply write script inside of package.json where all metadata are in <br>
     "compile": "sass --watch --no-source-map project2/main.scss project2/style.css"
   },
 ```
+
+# lineheight
