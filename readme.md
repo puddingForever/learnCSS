@@ -490,3 +490,48 @@ we can simply write script inside of package.json where all metadata are in <br>
 ```
 
 # lineheight
+
+when we use text, it has default line-height of 1.6<br>
+it is relative to the original text, it is 1.6 times than original text size <br>
+to increase the line-height, we can increase the number than 1.6 , to reduce the size we decrease number below to 1.6 <br>
+
+here, I decreased the line-height of heading<br>
+
+![image](https://github.com/puddingForever/learnCSS/assets/126591306/6c685566-3795-4b75-a5fc-da272b4a8c41)
+
+```
+.first-heading {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 34px;
+  line-height: 1;
+}
+```
+
+# not()
+
+To not select specific element, we use not() from css <br>
+![image](https://github.com/puddingForever/learnCSS/assets/126591306/f1d26199-726c-484e-948f-4e1960ff877e)
+
+```
+
+.social {
+  display: flex;
+  margin: 25px 0 30px;
+
+  &__img {
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+
+    // it will not select the first element of images,
+    //but overlaps elements each other
+    &:not(:first-child) {
+      margin-left: -8px;
+    }
+  }
+}
+
+```

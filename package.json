@@ -4,11 +4,18 @@
   "description": "![image](https://github.com/puddingForever/learnCSS/assets/126591306/347d3164-4ce3-4da4-9b36-fe0cc4862214)",
   "main": "index.js",
   "scripts": {
-    "compile": "sass --watch --no-source-map project2/main.scss project2/style.css"
+    "compile": "sass --watch --no-source-map project2/src/main.scss project2/src/style.css",
+    "build:compile": "sass --no-source-map project2/src/main.scss project2/build/compiled.css",
+    "build:prefixes": "postcss project2/build/compiled.css --use autoprefixer --output project2/build/prefixed.css",
+    "build:optimize": "csso project2/build/prefixed.css --output project2/build/style.css"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "csso-cli": "^4.0.2",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
     "sass": "^1.74.1"
   }
 }
