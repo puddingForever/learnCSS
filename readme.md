@@ -22,6 +22,8 @@
 
 # Project 2
 
+![image](https://github.com/puddingForever/learnCSS/assets/126591306/531b3bc3-a287-4ee1-aa22-be6c582238c5)
+
 - [basic](#basicP2)
 - [grid](#grid)
 - [placeholder](#placeholder)
