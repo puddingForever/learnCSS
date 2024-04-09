@@ -29,6 +29,7 @@
 - [placeholder](#placeholder)
 - [sass](#sass)
 - [lineHeight](#lineheight)
+- [pixelVSrem](#rem)
 
 # Basic
 
@@ -536,4 +537,72 @@ To not select specific element, we use not() from css <br>
   }
 }
 
+```
+
+# rem
+
+some of users might change font size for their browsers <br>
+
+![image](https://github.com/puddingForever/learnCSS/assets/126591306/b408a2b6-f342-461b-9910-4b4ed5f9d60a)
+
+if the client changes its setting, they expect the font-size gets bigger <br>
+However, if we use px in font size, it does not responsive. it stays the same <br>
+to solve this problem, we should use 'rem' which is responsive for the browser. <br>
+rem unit depends on the root element <br>
+100% is 16px if the default option is not changed to something else <br>
+by setting html font-size : 100%, we are linking the font size to the browser <br>
+
+```
+html {
+  font-size: 100%;
+}
+```
+
+and then, we use 'rem' unit <br>
+rem unit depends on the font size of the root element <br>
+normally the font-size is 16px, therefore normally 1rem is 16px <br>
+since we want our font size smaller than default, we use less than 1rem <br>
+
+```
+.page {
+  font-family: "Poppins", sans-serif;
+  //font-size: 14px;
+  font-size: 0.875rem;
+}
+```
+
+But to work with 16px = 1 rem everytime, it gets tricky <br>
+so we use little trick here by setting <br>
+
+```
+html{
+    font-size:font-size: 62.5%;
+}
+
+```
+
+font-size:62.5% indicates 1 rem is 10px <br>
+by doing so , we just have to divide by 10 <br>
+
+```
+.app{
+
+   // width: 1240px;
+  // height: 1030px;
+  width: 124rem;
+  height: 103rem;
+
+}
+
+```
+
+in the media query, we have to use em <br>
+however, em is still 1 rem (16px) <br>
+so in order to work with media query, we have to divide by 16 <br>
+
+```
+ @media (max-width: 81.25em ) { // 1300px
+    width: 100%;
+    margin: 0;
+  }
 ```
